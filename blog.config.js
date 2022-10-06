@@ -10,10 +10,10 @@ const BLOG = {
     keywords: ['Blog', 'Craft.do', 'Craft Docs', 'Next.js', 'TailwindCSS']
   },
   analytics: {
-    provider: '', // Currently support Umami, fill with 'umami' to enable or leave it empty to disable it.
+    provider: 'umami', // Currently support Umami, fill with 'umami' to enable or leave it empty to disable it.
     umamiConfig: {
-      scriptUrl: '', // The url of your Umami script
-      websiteId: '', // The website id of your Umami instance
+      scriptUrl: 'https://umami-production-d3d6.up.railway.app/umami.js', // The url of your Umami script
+      websiteId: 'db4701c0-d5f8-4519-9e20-b22578476a96', // The website id of your Umami instance
     }
   },
   isProd: process.env.VERCEL_ENV === 'production' // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
